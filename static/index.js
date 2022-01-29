@@ -441,10 +441,10 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return '试着好好练一下？';
-        if (cps <= 8) return 'TCL';
-        if (cps <= 10)  return 'TQL';
-        if (cps <= 15) return '您';
+        if (cps <= 20) return '埋了吧';
+        if (cps <= 40) return '一个客户，两个客户，三个客户……';
+        if (cps <= 80)  return '嗯～真不错';
+        if (cps <= 100) return '您?';
         return '人？';
     }
 
